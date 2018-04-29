@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".PagerAcitvity">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/source_icon"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pick_up"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/destinations"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/reached"
+            />
+    </LinearLayout>
+
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:orientation="horizontal"
+            android:background="@color/unselected_tab"
+            android:weightSum="4"
+            android:layout_marginTop="10dp"
+
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:elevation="10dp"
+                android:id="@+id/view1"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/unselected_tab"
+                android:elevation="10dp"
+                android:id="@+id/view2"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/unselected_tab"
+                android:elevation="10dp"
+                android:id="@+id/view3"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/unselected_tab"
+                android:elevation="10dp"
+                android:id="@+id/view4"
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/source"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/autour_one"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pick_up"
+            android:gravity="center"
+            android:textColor="@color/unselected_tab"
+            android:fontFamily="@font/autour_one"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/destination"
+            android:gravity="center"
+            android:textColor="@color/unselected_tab"
+            android:fontFamily="@font/autour_one"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reached"
+            android:gravity="center"
+            android:textColor="@color/unselected_tab"
+            android:fontFamily="@font/autour_one"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+
+            />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_margin="20dp"
+
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/triple_button_left"
+            android:text="track"
+            android:id="@+id/triple_button1"
+            android:gravity="center"
+            android:drawableRight="@drawable/target"
+            android:paddingRight="10dp"
+            android:fontFamily="@font/autour_one"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/triple_button2"
+            android:drawableRight="@drawable/support"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="support"
+            android:background="@drawable/triple_button_middle"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/triple_button3"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/cancel"
+            android:text="cancel"
+            android:background="@drawable/triple_button_right"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:id="@+id/tabLayout"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabIndicatorColor="@android:color/white"
+        tools:background="@android:color/holo_blue_bright"
+        app:tabMaxWidth="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabBackground="@android:color/white"
+        android:background="@android:color/white"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/unselected_tab"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        tools:background="@android:color/holo_green_dark"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/unselected_tab"
+                android:text="Payment party"
+                android:textSize="11sp"
+                android:fontFamily="@font/autour_one"
+
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    android:text="Destination"
+                    android:fontFamily="@font/autour_one"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/unselected_tab"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/unselected_tab"
+                    android:text="Payment type"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/autour_one"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Credit"
+                    android:fontFamily="@font/autour_one"
+
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/unselected_tab"
+                android:layout_gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/unselected_tab"
+                    android:text="Return"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/autour_one"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    android:text="NO"
+                    android:fontFamily="@font/autour_one"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/unselected_tab"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:fontFamily="@font/autour_one"
+            android:textColor="@color/unselected_tab"
+            android:text="Shipping fee"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/unselected_tab"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"
+        android:background="@android:color/white"
+        >
+
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+
+
+</LinearLayout>

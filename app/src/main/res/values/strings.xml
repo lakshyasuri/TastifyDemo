@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TastifyDemo</string>
+    <string name="splash_screen">Tastify</string>
+    <string name="source">SOURCE</string>
+    <string name="pick_up">PICK UP</string>
+    <string name="destination">DESTINATION</string>
+    <string name="reached">REACHED</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
